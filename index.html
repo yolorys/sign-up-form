@@ -25,16 +25,16 @@
                 <br>Sign up <em>now</em> to get started.</p>
             <p>You <em>know</em> you want to.</p>
         </div>
-        <form class="form-container">
+        <form class="form-container" id="signupForm">
             <p style="font-size: x-large; font-weight: bold; font-family: Arial, Helvetica, sans-serif;">Let's do this!</p>
             <div class="form-row">
                 <div class="label-input">
                     <label for="first_name">FIRST NAME</label>
-                    <input type="text" name="first_name" id="first_name">
+                    <input type="text" name="first_name" id="first_name" placeholder="Ben">
                 </div>
                 <div class="label-input"> 
                     <label for="last_name">LAST NAME</label>
-                    <input type="text" name="last_name" id="last_name">
+                    <input type="text" name="last_name" id="last_name" placeholder="Stephen">
                 </div>
             </div>
             <div class="form-row">
@@ -50,18 +50,17 @@
             <div class="form-row">
                 <div class="label-input">
                     <label for="password">PASSWORD</label>
-                    <input type="password" name="password" id="password">
+                    <input type="password" name="password" id="password" required>
                 </div>
                 <div class="label-input">
                     <label for="confirm-password">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm-password" id="confirm-password">
+                    <input type="password" name="confirm-password" id="confirm-password" required>
                 </div>
             </div>
+            <button type="submit">Create Account</button>
         </form>
-        <div class="right-bottom">
-            <button>Create Account</button>
-            <p style="font-family: Arial, Helvetica, sans-serif;">Already have an account? <span class="highlight-green">Log in</span></p>
-        </div>
+
+        <p class="right-bottom" style="font-family: Arial, Helvetica, sans-serif;">Already have an account? <span class="highlight-green">Log in</span></p>
     </div>
     <script src="script.js"></script>
 </body>

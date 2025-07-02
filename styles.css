@@ -98,11 +98,31 @@ button{
     font-weight: bold;
     border: none;
     border-radius: 10px;
-    width: 200px;
-    height: 48px;
+    width: 120px;
+    height: 30px;
 }
 
 .highlight-green {
     color: rgb(89, 109, 72);
     font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    border: 1px solid #ccc; 
+    outline: none;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+
+}
+
+
+input:invalid{
+    border-color: red;
+}
+
+input:focus{
+    border-color: blue;
 }
